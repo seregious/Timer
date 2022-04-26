@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		A3EB7C202816E9FF00D76DEA /* TimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EB7C1F2816E9FF00D76DEA /* TimerApp.swift */; };
-		A3EB7C222816E9FF00D76DEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EB7C212816E9FF00D76DEA /* ContentView.swift */; };
+		A3EB7C222816E9FF00D76DEA /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EB7C212816E9FF00D76DEA /* TimerView.swift */; };
 		A3EB7C242816E9FF00D76DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3EB7C232816E9FF00D76DEA /* Assets.xcassets */; };
 		A3EB7C272816E9FF00D76DEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3EB7C262816E9FF00D76DEA /* Preview Assets.xcassets */; };
+		A3EB7C2E2816EB3000D76DEA /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EB7C2D2816EB3000D76DEA /* TimerModel.swift */; };
+		A3EB7C302816F40600D76DEA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EB7C2F2816F40600D76DEA /* LoginView.swift */; };
+		A3EB7C322816F58600D76DEA /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EB7C312816F58600D76DEA /* UserManager.swift */; };
+		A3EB7C342816F78200D76DEA /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EB7C332816F78200D76DEA /* StarterView.swift */; };
+		A3EB7C3628170BB100D76DEA /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EB7C3528170BB100D76DEA /* StorageManager.swift */; };
+		A3EB7C382817F03400D76DEA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EB7C372817F03400D76DEA /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3EB7C1C2816E9FF00D76DEA /* Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EB7C1F2816E9FF00D76DEA /* TimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerApp.swift; sourceTree = "<group>"; };
-		A3EB7C212816E9FF00D76DEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A3EB7C212816E9FF00D76DEA /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		A3EB7C232816E9FF00D76DEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3EB7C262816E9FF00D76DEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A3EB7C2D2816EB3000D76DEA /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		A3EB7C2F2816F40600D76DEA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A3EB7C312816F58600D76DEA /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		A3EB7C332816F78200D76DEA /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		A3EB7C3528170BB100D76DEA /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		A3EB7C372817F03400D76DEA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,14 @@
 		A3EB7C1E2816E9FF00D76DEA /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				A3EB7C372817F03400D76DEA /* UserModel.swift */,
 				A3EB7C1F2816E9FF00D76DEA /* TimerApp.swift */,
-				A3EB7C212816E9FF00D76DEA /* ContentView.swift */,
+				A3EB7C212816E9FF00D76DEA /* TimerView.swift */,
+				A3EB7C2F2816F40600D76DEA /* LoginView.swift */,
+				A3EB7C332816F78200D76DEA /* StarterView.swift */,
+				A3EB7C312816F58600D76DEA /* UserManager.swift */,
+				A3EB7C2D2816EB3000D76DEA /* TimerModel.swift */,
+				A3EB7C3528170BB100D76DEA /* StorageManager.swift */,
 				A3EB7C232816E9FF00D76DEA /* Assets.xcassets */,
 				A3EB7C252816E9FF00D76DEA /* Preview Content */,
 			);
@@ -137,7 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3EB7C222816E9FF00D76DEA /* ContentView.swift in Sources */,
+				A3EB7C2E2816EB3000D76DEA /* TimerModel.swift in Sources */,
+				A3EB7C222816E9FF00D76DEA /* TimerView.swift in Sources */,
+				A3EB7C382817F03400D76DEA /* UserModel.swift in Sources */,
+				A3EB7C342816F78200D76DEA /* StarterView.swift in Sources */,
+				A3EB7C3628170BB100D76DEA /* StorageManager.swift in Sources */,
+				A3EB7C302816F40600D76DEA /* LoginView.swift in Sources */,
+				A3EB7C322816F58600D76DEA /* UserManager.swift in Sources */,
 				A3EB7C202816E9FF00D76DEA /* TimerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
