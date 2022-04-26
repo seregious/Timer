@@ -14,15 +14,8 @@ struct LoginView: View {
         userManager.user.name
     }
         
-    var buttonColor: Color {
-        switch userName.count {
-        case 0:
-                return Color.gray
-        case 1,2:
-                return Color.red
-        default:
-                return Color.green
-        }
+    var color: Color {
+        userManager.isValid ? .green : .red
     }
     
     var body: some View {
@@ -32,7 +25,7 @@ struct LoginView: View {
                 TextField("Enter your name", text: $userManager.user.name)
                 .multilineTextAlignment(.center)
                 Text("\(userName.count)")
-                    .foregroundColor(buttonColor)
+                    .foregroundColor(color)
                     .padding(.trailing, 10)
             }
             Button {
